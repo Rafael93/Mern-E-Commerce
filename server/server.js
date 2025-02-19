@@ -15,4 +15,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+const userRoutes = require("./routes/user.routes");
+app.use("/api/user", userRoutes);
+
 app.listen(port, () => console.log(`Listening on port: ${port}`));

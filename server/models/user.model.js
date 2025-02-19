@@ -1,9 +1,8 @@
-import mongoose from "mongoose";
-const { Schema } = mongoose;
+const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const uniqueValidator = require("mongoose-unique-validator");
 
-const UserSchema = new Schema(
+const UserSchema = new mongoose.Schema(
   {
     name: {
       type: String,

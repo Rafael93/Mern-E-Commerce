@@ -78,7 +78,7 @@ export default function login() {
           <div className="flex items-center justify-center mt-11">
             <hr className="border border-gray-90 flex-grow" />
             <p className="mx-2 text-sm font-medium text-gray-900">
-              Continúa con
+              Ingresar con
             </p>
             <hr className="border border-gray-90 flex-grow" />
           </div>

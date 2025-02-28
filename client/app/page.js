@@ -25,11 +25,11 @@ import {
 const navigation = {
   categories: [
     {
-      id: "women",
-      name: "Mujer",
+      id: "smartphones",
+      name: "Celulares",
       featured: [
         {
-          name: "New Arrivals",
+          name: "Nuevos Lanzamientos",
           href: "#",
           imageSrc:
             "https://tailwindui.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg",
@@ -37,7 +37,7 @@ const navigation = {
             "Models sitting back to back, wearing Basic Tee in black and bone.",
         },
         {
-          name: "Basic Tees",
+          name: "Samsung",
           href: "#",
           imageSrc:
             "https://tailwindui.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg",
@@ -47,41 +47,42 @@ const navigation = {
       ],
       sections: [
         {
-          id: "clothing",
-          name: "Clothing",
+          id: "notebooks&Pc",
+          name: "Notebooks & PC",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Dresses", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Denim", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "PC Armadas", href: "#" },
+            { name: "Notebook", href: "#" },
+            { name: "Desktop", href: "#" },
+            { name: "Mini PC", href: "#" },
+            { name: "Accesorios para notebook", href: "#" },
           ],
         },
         {
-          id: "accessories",
-          name: "Accessories",
+          id: "almacenamiento",
+          name: "Almacenamiento",
           items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
+            { name: "HD", href: "#" },
+            { name: "HD Externo", href: "#" },
+            { name: "SSD 2.5", href: "#" },
+            { name: "SSD M.2 SATA", href: "#" },
+            { name: "SSD NVMe", href: "#" },
+            { name: "SSD Externo Portátil", href: "#" },
+            { name: "Pendrive", href: "#" },
+            { name: "Micro SD", href: "#" },
+            { name: "Servidor", href: "#" },
+            { name: "Accesorios", href: "#" },
           ],
         },
         {
-          id: "brands",
-          name: "Brands",
+          id: "impresoras",
+          name: "Impresoras",
           items: [
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Significant Other", href: "#" },
+            { name: "Impresora Térmica", href: "#" },
+            { name: "Impresora Laser", href: "#" },
+            { name: "Impresora EcoTank", href: "#" },
+            { name: "Impresora de Corte", href: "#" },
+            { name: "Impresora Matricial", href: "#" },
+            { name: "Componentes y Accesorios", href: "#" },
           ],
         },
       ],
@@ -147,8 +148,8 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "Sobre nosotros", href: "#" },
+    { name: "Contactanos", href: "#" },
   ],
 };
 
@@ -384,7 +385,7 @@ export default function Home() {
                                       {item.name}
                                     </a>
                                     <p aria-hidden="true" className="mt-1">
-                                      Shop now
+                                      Compra aquí
                                     </p>
                                   </div>
                                 ))}
@@ -442,14 +443,14 @@ export default function Home() {
                     href="#"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
-                    Sign in
+                    Iniciar Sesión
                   </a>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                   <a
                     href="#"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
-                    Create account
+                    Crear Cuenta
                   </a>
                 </div>
 
@@ -464,14 +465,14 @@ export default function Home() {
                       className="block h-auto w-5 shrink-0"
                     />
                     <span className="ml-3 block text-sm font-medium">CAD</span>
-                    <span className="sr-only">, change currency</span>
+                    <span className="sr-only">, cambiar modena</span>
                   </a>
                 </div>
 
                 {/* Search */}
                 <div className="flex lg:ml-6">
                   <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
+                    <span className="sr-only">Buscar</span>
                     <MagnifyingGlassIcon
                       aria-hidden="true"
                       className="size-6"
@@ -489,7 +490,7 @@ export default function Home() {
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
                       0
                     </span>
-                    <span className="sr-only">items in cart, view bag</span>
+                    <span className="sr-only">Ver carrito</span>
                   </a>
                 </div>
               </div>

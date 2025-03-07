@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function login() {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-20 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <h2 className="mt-3 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
             Ingresa a tu cuenta

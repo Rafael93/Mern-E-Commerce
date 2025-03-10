@@ -20,12 +20,12 @@ export function Footer() {
   return (
     <>
       <footer className="sticky w-full h-auto border rounded-lg">
-        <div className="md: flex mx-1 my-1 justify-center">
-          <ul className="flex justify-center mx-40 mt-5 md:flex-col mx-6">
+        <div className="mx-2 my-1 flex flex-col items-center">
+          <ul className="flex flex-wrap justify-center mx-5 mt-5">
             {pages.map((page) => (
               <li
                 key={page.name}
-                className="text-sm text-gray-600 mr-[3rem] rounded-lg px-4 py-3 hover:bg-indigo-600 hover:text-white"
+                className="text-sm text-gray-600 mr-4 mb-2 rounded-lg px-4 py-3 hover:bg-indigo-600 hover:text-white"
               >
                 <Link alt="" href={page.href}>
                   {page.name}
@@ -33,9 +33,9 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <ul className="flex justify-center mx-40 my-6 md:mx-1 flex-col">
+          <ul className="flex flex-wrap justify-center mx-5 my-6">
             {socials.map((social) => (
-              <li key={social.name} className="mx-5 hover:scale-150">
+              <li key={social.name} className="mx-3 mb-2 hover:scale-150">
                 <Link href={social.href}>
                   <Image
                     src={social.src}
@@ -48,7 +48,7 @@ export function Footer() {
             ))}
           </ul>
           <hr className="w-[90%] justify mx-auto" />
-          <p className="my-9 text-center text-sm text-gray-600">
+          <p className="my-4 text-center text-sm text-gray-600">
             &#169; 2025 tu compañía, Inc. Todos los derechos reservados
           </p>
         </div>

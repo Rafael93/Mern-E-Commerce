@@ -40,7 +40,7 @@ const people = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-white py-32 px-10 sm:py-32">
+    <div className="bg-white py-32 px-10 min-h-[70vh] sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-20 lg:px-8 xl:grid-cols-3">
         <div className="max-w-xl">
           <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">

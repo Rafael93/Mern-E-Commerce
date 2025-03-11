@@ -28,12 +28,12 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-fit flex justify-center my-10 mx-auto w-[60%] h-[50vh] overflow-hidden">
+    <div className="relative w-fit border border-4 border-grey-100 rounded-lg flex justify-center my-10 mx-auto w-[60%] h-[50vh] overflow-hidden">
       <div className="relative w-full h-full transition-opacity duration-500">
         <Image
           alt="carouselImage"
           src={images[currentIndex]}
-          layout="fill" // Llenar el contenedor
+          width={1200}
           objectFit="cover" // Cubrir el contenedor manteniendo la proporción
           className="transition-opacity duration-500" // Animación de transición
         />

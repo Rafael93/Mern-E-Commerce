@@ -19,7 +19,7 @@ const socials = [
 export function Footer() {
   return (
     <>
-      <footer className="sticky w-full h-auto border rounded-lg">
+      <footer className="sticky w-full h-auto border rounded-lg select-none">
         <div className="mx-2 my-1 flex flex-col items-center">
           <ul className="flex flex-wrap justify-center mx-5 mt-5">
             {pages.map((page) => (

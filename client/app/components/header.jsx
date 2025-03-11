@@ -297,7 +297,7 @@ export function Header() {
         </div>
       </Dialog>
 
-      <header className="relative bg-white">
+      <header className="relative bg-white w-full">
         <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           Delivery gratis desde compras de $100
         </p>

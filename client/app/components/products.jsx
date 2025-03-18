@@ -63,7 +63,7 @@ export default function Products() {
           ))}
         </div>
       </div>
-      <Button className="text-white bg-[--secondary-color] p-2 rounded-lg hover:scale-125">
+      <Button className="flex text-white bg-[--secondary-color] p-2 my-2 mx-auto mb-10 rounded-lg hover:scale-125 group-hover:inline">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -77,8 +77,8 @@ export default function Products() {
             strokeLinejoin="round"
             d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
           />
+          <p className="mx-1 hidden">Ver más</p>
         </svg>
-        <p className="mx-1">Ver más</p>
       </Button>
     </div>
   );

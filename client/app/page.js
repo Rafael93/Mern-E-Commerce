@@ -7,8 +7,16 @@ export default function Home() {
     <>
       <div className="container mx-auto">
         <Carousel />
-        <h1 className="text-lg text-center text-white bg-[--secondary-color] w-[1200] mx-auto py-2 rounded-lg md: w-auto  ">
+        <h1 className="text-lg text-center text-white bg-[--secondary-color] w-[75rem] mx-auto py-2 rounded-lg md: w-auto  ">
           Ofertas
+        </h1>
+        <Products />
+        <h1 className="text-lg text-center text-white bg-[--secondary-color] w-[75rem] mx-auto py-2 rounded-lg md: w-auto  ">
+          Nuevos lanzamientos
+        </h1>
+        <Products />
+        <h1 className="text-lg text-center text-white bg-[--secondary-color] w-[75rem] mx-auto py-2 rounded-lg md: w-auto  ">
+          Notebooks
         </h1>
         <Products />
       </div>

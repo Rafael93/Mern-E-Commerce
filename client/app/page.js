@@ -2,23 +2,18 @@
 
 import Carousel from "./components/carousel.jsx";
 import Products from "./components/products.jsx";
+import Tag from "./components/tag.jsx";
 
 export default function Home() {
   return (
     <>
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-[1100px] mx-auto">
         <Carousel />
-        <h1 className="text-lg text-center text-white bg-[--secondary-color] w-[75rem] mx-auto py-2 rounded-lg md: w-auto  ">
-          Ofertas
-        </h1>
+        <Tag text="Ofertas" />
         <Products />
-        <h1 className="text-lg text-center text-white bg-[--secondary-color] w-[75rem] mx-auto py-2 rounded-lg md: w-auto  ">
-          Nuevos lanzamientos
-        </h1>
+        <Tag text="Nuevos Lanzamientos" />
         <Products />
-        <h1 className="text-lg text-center text-white bg-[--secondary-color] w-[75rem] mx-auto py-2 rounded-lg md: w-auto  ">
-          Notebooks
-        </h1>
+        <Tag text="Gaming" />
         <Products />
       </div>
     </>

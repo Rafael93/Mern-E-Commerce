@@ -1,7 +1,7 @@
 const navigation = {
   categories: [
     {
-      id: "tecno logia",
+      id: "tecnologia",
       name: "Tecnologia",
       featured: [
         {

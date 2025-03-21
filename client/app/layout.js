@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import SideBar from "./components/sidebar.jsx";
+import AdsSideBar from "./components/adsSideBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,8 +27,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <SideBar />
-        {children}
+        <div className="flex">
+          <SideBar />
+          {children}
+          <AdsSideBar />
+        </div>
         <Footer />
       </body>
     </html>

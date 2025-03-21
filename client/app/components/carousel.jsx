@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import smarthouse from "../../public/images/smarthouse.jpg";
-import deco from "../../public/images/deco.jpg"; // Agrega más imágenes
+import deco from "../../public/images/deco.jpg";
 
 const images = [smarthouse, deco]; // Array de imágenes
 
@@ -35,6 +35,7 @@ export default function Carousel() {
           src={images[currentIndex]}
           width={1200}
           className="transition-opacity duration-500" // Animación de transición
+          priority={false}
         />
       </div>
 

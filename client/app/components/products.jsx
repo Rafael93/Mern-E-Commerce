@@ -53,7 +53,7 @@ export default function Products() {
               <img
                 alt={product.imageAlt}
                 src={product.imageSrc}
-                className="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8"
+                className="aspect-square w-full rounded-lg bg-gray-200 object-cover hover:scale-105 group-hover:opacity-75 xl:aspect-7/8"
               />
               <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
               <p className="mt-1 text-lg font-medium text-gray-900">
@@ -63,22 +63,22 @@ export default function Products() {
           ))}
         </div>
       </div>
-      <Button className="flex text-white bg-[--secondary-color] p-2 my-2 mx-auto mb-10 rounded-lg hover:scale-125 group-hover:inline">
+      <Button className="flex items-center justify-center text-white bg-[--secondary-color] p-2 my-2 mx-auto mb-10 rounded-lg transition-transform duration-300 ease-in-out transform hover:rotate-90 hover:scale-125">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6 "
+          className="size-6"
         >
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
           />
-          <p className="mx-1 hidden">Ver más</p>
         </svg>
+        <p className="mx-1 hidden group-hover:inline">Ver más</p>
       </Button>
     </div>
   );

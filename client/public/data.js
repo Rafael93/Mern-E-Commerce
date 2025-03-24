@@ -121,6 +121,124 @@ const navigation = {
         },
       ],
     },
+    {
+      id: "Fotografia",
+      name: "Fotografía",
+      featured: [
+        {
+          name: "Nuevos Lanzamientos",
+          href: "#",
+          imageSrc: "images/tech.jpg",
+          imageAlt:
+            "Models sitting back to back, wearing Basic Tee in black and bone.",
+        },
+        {
+          name: "Celulares",
+          href: "#",
+          imageSrc: "images/smartphones.jpg",
+          imageAlt:
+            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
+        },
+      ],
+      sections: [
+        {
+          id: "Camaras",
+          name: "Cámaras",
+          items: [
+            { name: "Marcas", href: "#" },
+            { name: "Digitales", href: "#" },
+            { name: "Reflex", href: "#" },
+          ],
+        },
+        {
+          id: "accesorios",
+          name: "Accesorios",
+          items: [
+            { name: "HD", href: "#" },
+            { name: "HD Externo", href: "#" },
+            { name: "SSD 2.5", href: "#" },
+            { name: "SSD M.2 SATA", href: "#" },
+            { name: "SSD NVMe", href: "#" },
+            { name: "SSD Externo Portátil", href: "#" },
+            { name: "Pendrive", href: "#" },
+            { name: "Micro SD", href: "#" },
+            { name: "Servidor", href: "#" },
+            { name: "Accesorios", href: "#" },
+          ],
+        },
+        {
+          id: "almacenamiento",
+          name: "Almacenamiento",
+          items: [
+            { name: "Impresora Térmica", href: "#" },
+            { name: "Impresora Laser", href: "#" },
+            { name: "Impresora EcoTank", href: "#" },
+            { name: "Impresora de Corte", href: "#" },
+            { name: "Impresora Matricial", href: "#" },
+            { name: "Componentes y Accesorios", href: "#" },
+          ],
+        },
+      ],
+    },
+    {
+      id: "Fotografia",
+      name: "Fotografía",
+      featured: [
+        {
+          name: "Nuevos Lanzamientos",
+          href: "#",
+          imageSrc: "images/tech.jpg",
+          imageAlt:
+            "Models sitting back to back, wearing Basic Tee in black and bone.",
+        },
+        {
+          name: "Celulares",
+          href: "#",
+          imageSrc: "images/smartphones.jpg",
+          imageAlt:
+            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
+        },
+      ],
+      sections: [
+        {
+          id: "Camaras",
+          name: "Cámaras",
+          items: [
+            { name: "Marcas", href: "#" },
+            { name: "Digitales", href: "#" },
+            { name: "Reflex", href: "#" },
+          ],
+        },
+        {
+          id: "accesorios",
+          name: "Accesorios",
+          items: [
+            { name: "HD", href: "#" },
+            { name: "HD Externo", href: "#" },
+            { name: "SSD 2.5", href: "#" },
+            { name: "SSD M.2 SATA", href: "#" },
+            { name: "SSD NVMe", href: "#" },
+            { name: "SSD Externo Portátil", href: "#" },
+            { name: "Pendrive", href: "#" },
+            { name: "Micro SD", href: "#" },
+            { name: "Servidor", href: "#" },
+            { name: "Accesorios", href: "#" },
+          ],
+        },
+        {
+          id: "almacenamiento",
+          name: "Almacenamiento",
+          items: [
+            { name: "Impresora Térmica", href: "#" },
+            { name: "Impresora Laser", href: "#" },
+            { name: "Impresora EcoTank", href: "#" },
+            { name: "Impresora de Corte", href: "#" },
+            { name: "Impresora Matricial", href: "#" },
+            { name: "Componentes y Accesorios", href: "#" },
+          ],
+        },
+      ],
+    },
   ],
   pages: [
     { name: "Sobre nosotros", href: "/about-us" },

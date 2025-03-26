@@ -47,9 +47,22 @@ export function Footer() {
               </li>
             ))}
           </ul>
+          <div className="mb-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14179.71840297349!2d-55.8792704!3d-27.315391749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spy!4v1742993022854!5m2!1ses-419!2spy"
+              width="1000"
+              height="350"
+              loading="lazy"
+              className="border border-indigo-900 border-4 rounded-2xl mx-auto mb-3"
+            ></iframe>
+            <p className="text-sm text-gray-600 text-center font-medium">
+              Dirección: Calle Carlos Antonio López c/ General Caballas N° 1526.
+              Encarnación. Paraguay
+            </p>
+          </div>
           <hr className="w-[90%] justify mx-auto" />
           <p className="my-4 text-center text-sm text-gray-600">
-            &#169; 2025 tu compañía, Inc. Todos los derechos reservados
+            &#169; 2025 Rafael Gamarra, Developer. Todos los derechos reservados
           </p>
         </div>
       </footer>

@@ -181,8 +181,8 @@ const navigation = {
       ],
     },
     {
-      id: "Fotografia",
-      name: "Fotografía",
+      id: "gaming",
+      name: "Gaming",
       featured: [
         {
           name: "Nuevos Lanzamientos",
@@ -201,8 +201,8 @@ const navigation = {
       ],
       sections: [
         {
-          id: "Camaras",
-          name: "Cámaras",
+          id: "computadoras",
+          name: "Computadoras & Notebooks",
           items: [
             { name: "Marcas", href: "#" },
             { name: "Digitales", href: "#" },
@@ -210,8 +210,8 @@ const navigation = {
           ],
         },
         {
-          id: "accesorios",
-          name: "Accesorios",
+          id: "perifericos",
+          name: "Perifericos",
           items: [
             { name: "HD", href: "#" },
             { name: "HD Externo", href: "#" },
@@ -226,8 +226,8 @@ const navigation = {
           ],
         },
         {
-          id: "almacenamiento",
-          name: "Almacenamiento",
+          id: "refrigeramiento",
+          name: "Refrigeramiento",
           items: [
             { name: "Impresora Térmica", href: "#" },
             { name: "Impresora Laser", href: "#" },

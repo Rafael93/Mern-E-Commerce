@@ -1,5 +1,3 @@
-"use client";
-
 import Carousel from "./components/carousel.jsx";
 import Products from "./components/products.jsx";
 import SideBar from "./components/sidebar.jsx";

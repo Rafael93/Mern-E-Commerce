@@ -40,9 +40,9 @@ const people = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-white py-32 px-10 min-h-[70vh] sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-20 lg:px-8 xl:grid-cols-3">
-        <div className="max-w-xl">
+    <div className="bg-white max-w-7xl mx-auto">
+      <div className="flex mx-auto max-w-7xl my-[10rem]">
+        <div className="max-w-[30rem] flex-1 mx-8">
           <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
             Conocé a nuestro equipo
           </h2>
@@ -54,13 +54,10 @@ export default function AboutUs() {
             id elit..
           </p>
         </div>
-        <ul
-          role="list"
-          className="grid gap-x-[5rem] sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-        >
+        <ul role="list" className="flex flex-1 flex-wrap">
           {people.map((person) => (
             <li key={person.name}>
-              <div className="flex items-center gap-x-6">
+              <div className="flex items-center gap-x-6 mr-6">
                 <img
                   alt=""
                   src={person.imageUrl}

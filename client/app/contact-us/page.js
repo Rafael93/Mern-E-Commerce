@@ -4,6 +4,7 @@ import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import { Field, Label, Switch } from "@headlessui/react";
 export default function contactUs() {
   const [agreed, setAgreed] = useState(false);
+
   return (
     <div className=" bg-white px-6 py-20 sm:py-22 lg:px-8">
       <div
@@ -158,12 +159,12 @@ export default function contactUs() {
               <Switch
                 checked={agreed}
                 onChange={setAgreed}
-                className="group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-gray-900/5 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-checked:bg-indigo-600"
+                className="group inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition data-[checked]:bg-indigo-600"
               >
                 <span className="sr-only">De Acuerdo con las políticas</span>
                 <span
                   aria-hidden="true"
-                  className="size-4 transform rounded-full bg-white ring-1 shadow-xs ring-gray-900/5 transition duration-200 ease-in-out group-data-checked:translate-x-3.5"
+                  className="size-4 translate-x-1 rounded-full bg-white transition group-data-[checked]:translate-x-6"
                 />
               </Switch>
             </div>

@@ -21,4 +21,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
+  .clickable {
+    cursor: pointer; /* Asegúrate de que el cursor indique que es clicable */
+  }
 }

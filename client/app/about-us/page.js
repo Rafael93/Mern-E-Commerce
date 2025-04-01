@@ -41,12 +41,12 @@ const people = [
 export default function AboutUs() {
   return (
     <div className="bg-white max-w-7xl mx-auto">
-      <div className="flex mx-auto max-w-7xl my-[10rem]">
+      <div className="flex flex-col mx-auto max-w-7xl my-[2rem]">
         <div className="max-w-[30rem] flex-1 mx-8">
           <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
             Conocé a nuestro equipo
           </h2>
-          <p className="mt-6 text-lg/8 text-gray-600">
+          <p className="mt-6 text-md text-gray-600">
             Mollit fugiat eu cillum labore deserunt incididunt aliquip anim
             irure velit. Nostrud eu aliqua deserunt labore. Sit ad labore esse
             aliqua. Dolore officia ullamco excepteur aute ad laboris nulla.
@@ -54,14 +54,17 @@ export default function AboutUs() {
             id elit..
           </p>
         </div>
-        <ul role="list" className="flex flex-1 flex-wrap">
+        <ul
+          role="list"
+          className="flex flex-col my-[2.5rem] gap-5 justify-start mx-auto"
+        >
           {people.map((person) => (
             <li key={person.name}>
-              <div className="flex items-center gap-x-6 mr-6">
+              <div className="flex items-center">
                 <img
                   alt=""
                   src={person.imageUrl}
-                  className="size-10 rounded-full"
+                  className="size-10 rounded-full mx-4"
                 />
                 <div>
                   <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">

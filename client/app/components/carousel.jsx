@@ -30,21 +30,22 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-fit border border-4 border-grey-100 rounded-lg flex justify-center my-10 mx-auto w-[60%] h-[50vh] overflow-hidden z-[-1]">
-      <div className="relative w-full h-full transition-opacity duration-500">
+    <div className="relative w-fit border border-4 border-grey-100 rounded-lg flex justify-center my-10 mx-auto w-[60%] h-[50vh] overflow-hidden z-[-1] max-sm:max-md:h-[30vh]">
+      <div className="relative w-full h-full transition-opacity duration-500 max-sm:max-md:h-[30vh]">
         <Image
           alt="carouselImage"
           src={images[currentIndex]}
           width={1200}
           className="transition-opacity duration-500" // Animación de transición
           priority={false}
+          style={{ objectFit: "contain" }}
         />
       </div>
 
       {/* Flecha Izquierda */}
       <div
         className="absolute left-0 top-1/2 transform -translate-y-1/2 mx-5"
-        onClick={prevImage}
+        onClick={() => console.log("click")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +66,7 @@ export default function Carousel() {
       {/* Flecha Derecha */}
       <div
         className="absolute right-0 top-1/2 transform -translate-y-1/2 mx-5"
-        onClick={nextImage}
+        onClick={() => console.log("click")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

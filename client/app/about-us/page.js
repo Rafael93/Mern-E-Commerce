@@ -41,8 +41,8 @@ const people = [
 export default function AboutUs() {
   return (
     <div className="bg-white max-w-7xl mx-auto">
-      <div className="flex flex-col mx-auto max-w-7xl my-[2rem]">
-        <div className="max-w-[30rem] flex-1 mx-8">
+      <div className="flex flex-col mx-auto max-w-7xl my-[2rem] lg:flex-row ">
+        <div className="max-w-[30rem] flex-1 mx-8 lg:m-[5rem]">
           <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
             Conocé a nuestro equipo
           </h2>

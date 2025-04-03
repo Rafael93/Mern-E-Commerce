@@ -1,6 +1,9 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
-export default function login() {
+export default function login({ onSubmit }) {
+  const { email, setEmail } = useState("");
+  const { error, setError } = useState({});
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-20 lg:px-8">
@@ -21,11 +24,13 @@ export default function login() {
               </label>
               <div className="mt-2">
                 <input
+                  required
                   id="email"
                   name="email"
                   type="email"
-                  required
                   autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border outline-1 -outline-offset-1 outline-black-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>

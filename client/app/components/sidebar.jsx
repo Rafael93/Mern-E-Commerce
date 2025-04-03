@@ -11,7 +11,7 @@ export default function SideBar() {
 
   return (
     <>
-      <div className="bg-indigo-500 min-w-[15%] max-h-[100%] rounded-lg text-white z-1 mx-auto my-[2.5rem] max-[1400px]:max-2xl:hidden">
+      <div className="hidden 2xl:block bg-indigo-500 min-w-[15%] max-h-[100%] rounded-lg text-white z-1 mx-5 my-[2.5rem]">
         <h1 className="text-xl m-6 text-center">Categorías</h1>
         <ul className="bg-indigo-700 border rounded-2xl mx-6">
           {navigation.categories.map((category) => (

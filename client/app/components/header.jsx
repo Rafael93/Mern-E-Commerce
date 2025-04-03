@@ -30,7 +30,11 @@ export function Header() {
   return (
     <div className="bg-white">
       {/* Mobile menu */}
-      <Dialog open={open} onClose={setOpen} className="relative z-40 lg:hidden">
+      <Dialog
+        open={open}
+        onClose={setOpen}
+        className="relative z-40 2xl:hidden"
+      >
         <DialogBackdrop
           transition
           className="fixed inset-0 bg-black/25 transition-opacity duration-300 ease-linear data-closed:opacity-0"
@@ -135,7 +139,7 @@ export function Header() {
                     href={page.href}
                     className="-m-2 block p-2 font-medium text-gray-900"
                   >
-                    <a>{page.name}</a>
+                    {page.name}
                   </Link>
                 </div>
               ))}
@@ -182,7 +186,7 @@ export function Header() {
               <button
                 type="button"
                 onClick={() => setOpen(true)}
-                className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className="relative rounded-md bg-white p-2 text-gray-400 2xl:hidden"
               >
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open menu</span>
@@ -190,7 +194,7 @@ export function Header() {
               </button>
 
               {/* Logo */}
-              <div className="ml-4 flex lg:ml-0">
+              <div className="ml-4 flex 2xl:ml-0">
                 <Link href="/">
                   <span className="sr-only">Your Company</span>
                   <img
@@ -202,7 +206,7 @@ export function Header() {
               </div>
 
               {/* Flyout menus */}
-              <PopoverGroup className="hidden lg:ml-8 lg:block lg:self-stretch">
+              <PopoverGroup className="hidden xl:ml-8 xl:block xl:self-stretch">
                 <div className="flex h-full space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">

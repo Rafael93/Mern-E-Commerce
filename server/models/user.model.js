@@ -5,11 +5,11 @@ const UserSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "Name is mandatory"],
+      //required: [true, "Name is mandatory"],
     },
     lastname: {
       type: String,
-      required: [true, "Lastname is mandatory"],
+      //required: [true, "Lastname is mandatory"],
     },
     gender: {
       type: String,
@@ -19,7 +19,7 @@ const UserSchema = new mongoose.Schema(
     age: {
       type: Number,
       min: [18, "You have to be older than this"],
-      require: [true, "age is mandatory"],
+      //require: [true, "age is mandatory"],
     },
     city: {
       type: String,

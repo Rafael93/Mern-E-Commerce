@@ -2,8 +2,9 @@ import UserForm from "../components/form/user/new/User.form";
 const Registration = () => {
   return (
     <>
-      <h1>Registration Page</h1>
-      <UserForm />
+      <div className="container mx-auto text-2xl/9 font-bold tracking-tight text-gray-900">
+        <UserForm />
+      </div>
     </>
   );
 };

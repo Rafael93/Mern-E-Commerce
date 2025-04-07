@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import axios from "axios";
+import Label from "../components/label";
 
 const login = ({ onSubmit }) => {
   const { email, setEmail } = useState("");
   const { password, setPassword } = useState("");
-
-  //const { error, setError } = useState({});
 
   return (
     <>
@@ -21,12 +19,7 @@ const login = ({ onSubmit }) => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form action="#" method="POST" className="space-y-6">
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm/6 font-medium text-gray-900"
-              >
-                Usuario
-              </label>
+              <Label text="Usuario" htmlfor="email" />
               <div className="mt-2">
                 <input
                   required
@@ -74,7 +67,6 @@ const login = ({ onSubmit }) => {
 
             <div>
               <button
-                onClick={createNewUser}
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >

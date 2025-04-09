@@ -312,6 +312,13 @@ export function Header() {
                     Iniciar Sesión
                   </a>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
+                  <a
+                    href="registration/"
+                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >
+                    Registrarme
+                  </a>
+                  <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">

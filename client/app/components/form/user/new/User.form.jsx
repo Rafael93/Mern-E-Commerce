@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/compat/router";
 import Label from "@/app/components/label";
+import { Button } from "@headlessui/react";
+import { useRouter } from "next/navigation";
 
 const UserForm = ({ onSubmit }) => {
   const [name, setName] = useState("");
@@ -12,29 +13,33 @@ const UserForm = ({ onSubmit }) => {
   const [city, setCity] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [error, setError] = useState({});
-
+  const [error, setError] = useState("");
   const router = useRouter();
+
+  const creationFail = (errorMsg) => {
+    setError(errorMsg.response.data.errors);
+  };
+
+  const creationSuccess = () => {
+    router.push("/");
+  };
 
   const handleCancel = () => {
     router.push("/");
   };
 
-  const createdFail = (errorMsg) => {
-    setError(errorMsg.response.data.errors);
-  };
-
-  const createdOk = () => {
+  const handleSubmit = () => {
     const data = {
-      name,
-      lastname,
-      gender,
-      age,
-      city,
-      email,
-      password,
+      name: name,
+      lastname: lastname,
+      email: email,
+      gender: gender,
+      age: age,
+      city: city,
+      password: password,
+      confirmPassword: confirmPassword,
     };
-    onSubmit(data, createdOk, createdFail);
+    onSubmit(data, creationSuccess, creationFail);
   };
 
   return (
@@ -54,7 +59,7 @@ const UserForm = ({ onSubmit }) => {
                 id="name"
                 name="name"
                 type="text"
-                autoComplete={false}
+                autoComplete="true"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border outline-1 -outline-offset-1 outline-black-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
@@ -102,7 +107,7 @@ const UserForm = ({ onSubmit }) => {
                 name="gender"
                 value={gender}
                 onChange={(e) => setGender(e.target.value)}
-                autoComplete={false}
+                autoComplete="false"
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               >
                 <option value="Male">Masculino</option>
@@ -173,10 +178,17 @@ const UserForm = ({ onSubmit }) => {
 
             <button
               type="submit"
+              onClick={handleSubmit}
               className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Registrarse
             </button>
+            <Button
+              onClick={handleCancel}
+              className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Cancelar
+            </Button>
           </form>
         </div>
       </div>

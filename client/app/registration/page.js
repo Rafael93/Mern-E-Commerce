@@ -2,13 +2,13 @@
 import UserForm from "../components/form/user/new/User.form";
 import axios from "axios";
 const Registration = () => {
-  const createNewUser = async (data, onSuccess, onFail) => {
+  const createNewUser = async (data, creationSuccess, creationFail) => {
     try {
       const response = await axios.post("http://localhost:8000/api/user", data);
       const result = await response.data;
-      onSuccess(result);
+      creationSuccess(result);
     } catch (error) {
-      onFail(error);
+      creationFail(error);
     }
   };
   return (

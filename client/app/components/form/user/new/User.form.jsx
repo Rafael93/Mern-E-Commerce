@@ -28,14 +28,15 @@ const UserForm = ({ onSubmit }) => {
     router.push("/");
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const data = {
       name: name,
       lastname: lastname,
-      email: email,
       gender: gender,
       age: age,
       city: city,
+      email: email,
       password: password,
       confirmPassword: confirmPassword,
     };
@@ -110,9 +111,10 @@ const UserForm = ({ onSubmit }) => {
                 autoComplete="false"
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               >
-                <option value="Male">Masculino</option>
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="Masculino">Masculino</option>
                 <option value="Femenino">Femenino</option>
-                <option value="other">Otros</option>
+                <option value="Otros">Otros</option>
               </select>
             </div>
 
@@ -169,7 +171,7 @@ const UserForm = ({ onSubmit }) => {
                 required
                 id="confirmPassword"
                 name="confirmPassword"
-                type="confirmPassword"
+                type="password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"

@@ -7,6 +7,7 @@ module.exports.createUser = async (req, res) => {
   } catch (error) {
     res.status(500);
     res.json(error.message);
+    console.log(error);
   }
 };
 
@@ -18,6 +19,7 @@ module.exports.getUsers = async (req, res) => {
   } catch (error) {
     res.status(500);
     res.json(error.message);
+    console.log(error);
   }
 };
 
@@ -30,6 +32,7 @@ module.exports.getUser = async (req, res) => {
   } catch (error) {
     res.status(500);
     res.json(error.message);
+    console.log(error);
   }
 };
 
@@ -45,6 +48,7 @@ module.exports.updateUser = async (req, res) => {
   } catch (error) {
     res.status(500);
     res.json(error.message);
+    console.log(error);
   }
 };
 
@@ -57,5 +61,6 @@ module.exports.deleteUser = async (req, res) => {
   } catch (error) {
     res.status(500);
     res.json(error);
+    console.log(error);
   }
 };
